@@ -91,6 +91,4 @@ class ExpenseRepository(
     suspend fun getTotalExpensesForAccount(accountId: Int): Double {
         return expenseDao.getTotalExpensesForAccount(accountId) ?: 0.0
     }
-
-
 }
